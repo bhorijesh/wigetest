@@ -16,11 +16,11 @@ let accessProProxyHandle,
 
 
 if (accessProDevMode) {
-    accessProProxyHandle = 'https://cdn.jsdelivr.net/gh/bhorijesh/widget/widget';
-    accessProStaticPath = 'https://cdn.jsdelivr.net/gh/bhorijesh/widget/widget';
+    accessProProxyHandle = 'https://cdn.jsdelivr.net/gh/bhorijesh/widgetest/widget';
+    accessProStaticPath = 'https://cdn.jsdelivr.net/gh/bhorijesh/widgetest/widget';
 } else {
-    accessProProxyHandle = 'https://cdn.jsdelivr.net/gh/bhorijesh/widget/widget';
-    accessProStaticPath = 'https://cdn.jsdelivr.net/gh/bhorijesh/widget/widget';
+    accessProProxyHandle = 'https://cdn.jsdelivr.net/gh/bhorijesh/widgetest/widget';
+    accessProStaticPath = 'https://cdn.jsdelivr.net/gh/bhorijesh/widgetest/widget';
 }
 
 // if (accessProDevMode) {
