@@ -1,0 +1,135 @@
+.asw-menu {
+    font-family: "Roboto", sans-serif;
+    position: fixed;
+    opacity: 1;
+    transition: display 0.3s;
+    z-index: 500001;
+    overflow: hidden;
+    width: 500px;
+    line-height: 1;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    height: calc(100% - 40px - 75px);
+    color: #000;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    padding-bottom: 40px;
+ }
+ 
+ .asw-widget,
+ .asw-menu {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+ }
+ 
+ .asw-widget *,
+ .asw-menu * {
+    box-sizing: border-box;
+ }
+ 
+ .asw-menu-btn {
+    position: fixed;
+    z-index: 500000;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer !important;
+    width: 60px;
+    height: 60px;
+ }
+ 
+ .asw-menu-btn:hover {
+    transform: scale(1.15);
+ }
+ 
+ @media only screen and (max-width: 560px) {
+    .asw-menu-btn {
+       transform: scale(0.9);
+    }
+ 
+    .asw-menu-btn svg {
+       /* width: 24px;
+       height: 24px;
+       min-height: 24px;
+       min-width: 24px;
+       max-width: 24px;
+       max-height: 24px; */
+    }
+ }
+ 
+ @media only screen and (max-width: 560px) {
+    .asw-menu {
+       width: calc(100% - 20px);
+       left: 10px;
+    }
+ }
+ 
+ @media only screen and (max-width: 420px) {
+    .asw-items {
+       grid-template-columns: repeat(2, minmax(0, 1fr));
+       gap: 0.5rem;
+    }
+ 
+    .asw-menu {
+       width: calc(100% - 20px);
+       left: 10px;
+    }
+ 
+    #asw-language-wrapper {
+       column-count: 1;
+    }
+ }
+ 
+ .asw-main-icon-wrapper {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    border: 5px solid;
+    border-radius: 50%;
+    background-color: #fff;
+ }
+ 
+ .asw-main-svg-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .asw-main-icon-wrapper svg {
+    height: 80%;
+    width: 80%;
+ }
+ 
+ .asw-loading-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ .asw-outer-svg {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .asw-main-icon {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+ }
+ 
