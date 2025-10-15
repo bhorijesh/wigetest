@@ -19,7 +19,7 @@ if (accessProDevMode) {
     accessProProxyHandle = 'http://localhost:3000/api';
     accessProStaticPath = 'http://localhost:1337/widget';
 } else {
-    accessProProxyHandle = 'https://cdn.jsdelivr.net/gh/bhorijesh/widgetest/widget';
+    accessProProxyHandle = 'http://localhost:3000/api';
     accessProStaticPath = 'http://localhost:1337/widget';
 }
 
@@ -352,7 +352,7 @@ class AccessProIcon {
             const siteId = window.ACCESSPRO_SITE_ID || document.documentElement.getAttribute("data-wf-site");
             console.log('Fetching config for siteId:', siteId);
 
-            const response = await fetch(`http://localhost:3000/api/widget-settings/public?userId=68e474b3cd8f14e862589dcc&siteId=${siteId}`, {
+            const response = await fetch(`${accessProSettingsUrl}?siteId=${siteId}`, {
                 headers: {
                     "Content-Type": "application/json",
                 },

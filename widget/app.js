@@ -48,7 +48,7 @@ checkIfAnyFeatureActive();
 
 // Feature usage for analytics
 async function aswFeaturesUsageUpdate(feature) {
-    if (["free", "starter", "starter_annual", "custom"].includes(accessProPlanName)) return;
+    if (["free", "starter", "starter_annual", "custom"].includes(accessProPlanName)) return true;
     fetch(`${accessProProxyHandle}/theme/analytic/${feature}/update`, {
         method: "GET"
     });
