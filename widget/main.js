@@ -85,6 +85,7 @@ class AccessProIcon {
         this.initWeb();
         /*------------------------*/
         this.config = await this.fetchConfig();
+        console.log(this.config);
         this.isWidgetOpenedOnce = localStorage.getItem("acp-widget-opened") === "true";
         if (this.config?.success) {
             this.widgetStyle = this.config.data?.template || "default";
